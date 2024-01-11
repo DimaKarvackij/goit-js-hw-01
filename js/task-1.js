@@ -11,7 +11,9 @@
 //Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 function makeTransaction(quantity, pricePerDroid) {
-  return `You ordered ${quantity} droids worth ${pricePerDroid} credits!`;
+  return `You ordered ${quantity} droids worth ${
+    pricePerDroid * quantity
+  } credits!`;
 }
 console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
 console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
